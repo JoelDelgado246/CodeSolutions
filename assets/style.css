@@ -1,0 +1,158 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header*/
+header{
+    border-bottom-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+ul.secciones_nav li{
+    padding: 0 2rem;
+}
+
+ul.secciones_nav a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul.secciones_nav a:hover{
+    color: #42A5F5;
+}
+    /*Logo*/
+.logo-container{
+    width: 90px;
+    height: 90px;
+}
+
+
+/*Footer*/
+footer{
+    border-top-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+
+/*---Extras---*/
+.image-container{
+    width: 600px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+/*Tarjetas*/
+    /* Tarjetas de los Equipos */
+.card-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    width: 210px;
+    min-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 30px 0 30px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    color: #666;
+}
+
+.carousel-item .card {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.carousel-item {
+    padding: 10px;
+}
+
+/*Tipos de letra*/
+.titulo_text {
+    font-family: 'Audiowide', sans-serif; 
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.titulos {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: start;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.secciones_text {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.titulo_tarjeta{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'Audiowide';
+    src: url('fonts/Audiowide-Regular.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
