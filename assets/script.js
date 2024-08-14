@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    Papa.parse("equipos.csv", {
+    Papa.parse("/equipos.csv", {
         download: true,
         header: true,
         complete: function (results) {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 card.className = 'card';
 
                 card.innerHTML = `
-                    <img src="assets/images/default-team.png" alt="Equipo">
+                    <img src="../assets/images/default-team.png" alt="Equipo">
                     <H3 class="titulo_tarjeta">${team.teamName}</H3>
                     <p>Productos involucrados:<br>${[...team.products].join(', ')}</p>
                 `;
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    Papa.parse("productos.csv", {
+    Papa.parse("/productos.csv", {
         download: true,
         header: true,
         complete: function (results) {

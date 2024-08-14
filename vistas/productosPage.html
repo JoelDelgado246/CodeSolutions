@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeSolutions-Productos</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../assets/style.css" />
+    <script defer src="../assets/script.js"></script>
+  </head>
+  <body>
+    <header class="d-flex justify-content-between align-items-center mx-5">
+      <a
+        href="/index.html"
+        class="text-decoration-none d-flex align-items-center"
+      >
+        <img
+          src="../assets/images/logo_CodeSolutions.png"
+          alt=""
+          class="logo-container me-2"
+        />
+        <span class="titulo_text">CodeSolutions</span>
+      </a>
+
+      <ul
+        class="justify-content-center secciones_text secciones_nav list list-unstyled d-flex m-0"
+      >
+        <li class="">
+          <a href="/index.html">Inicio</a>
+        </li>
+        <li class="">
+          <a href="/vistas/gruposPage.html">Grupos de desarrollo</a>
+        </li>
+        <li class="">
+          <a href="/vistas/productosPage.html">Productos</a>
+        </li>
+      </ul>
+    </header>
+
+    <section id="productos" class="container my-5">
+      <div>
+        <p class="titulos">Nuestros Productos</p>
+        <p>
+          Explora nuestra gama de productos diseñados para optimizar cada
+          aspecto de tu negocio. Desde aplicaciones intuitivas hasta
+          herramientas avanzadas de gestión, nuestras soluciones están pensadas
+          para impulsar tu productividad y llevar tu empresa al siguiente nivel.
+          Navega por el carrusel para encontrar el producto perfecto para ti.
+        </p>
+
+        <div
+          class="card-container flex-wrap"
+          id="cards-container-productos"
+        ></div>
+        <!-- Aquí se insertarán las tarjetas dinámicamente -->
+      </div>
+    </section>
+
+    <footer class="p-5 text-center">
+      <span>© EPN - Todos los derechos reservados</span>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="productInfoModal"
+      tabindex="-1"
+      aria-labelledby="productInfoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoModalLabel">
+              Información del Producto
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="modal_product_name"></p>
+            <p id="modal_product_description"></p>
+            <p id="modal_product_version"></p>
+            <p id="modal_product_corporation"></p>
+            <p id="modal_product_company"></p>
+            <p id="modal_product_contact"></p>
+            <p id="modal_product_ruc"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
