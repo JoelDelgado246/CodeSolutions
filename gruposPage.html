@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeSolutions-Productos</title>
+    <title>CodeSolutions-Grupos</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <link
@@ -13,8 +13,8 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="../assets/style.css" />
-    <script defer src="../assets/script.js"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/script.js"></script>
   </head>
   <body>
     <header class="d-flex justify-content-between align-items-center mx-5">
@@ -23,7 +23,7 @@
         class="text-decoration-none d-flex align-items-center"
       >
         <img
-          src="../assets/images/logo_CodeSolutions.png"
+          src="assets/images/logo_CodeSolutions.png"
           alt=""
           class="logo-container me-2"
         />
@@ -34,33 +34,33 @@
         class="justify-content-center secciones_text secciones_nav list list-unstyled d-flex m-0"
       >
         <li class="">
-          <a href="/index.html">Inicio</a>
+          <a href="index.html">Inicio</a>
         </li>
         <li class="">
-          <a href="/vistas/gruposPage.html">Grupos de desarrollo</a>
+          <a href="gruposPage.html">Grupos de desarrollo</a>
         </li>
         <li class="">
-          <a href="/vistas/productosPage.html">Productos</a>
+          <a href="productosPage.html">Productos</a>
         </li>
       </ul>
     </header>
 
-    <section id="productos" class="container my-5">
+    <section id="grupos_de_desarrollo" class="container my-5">
       <div>
-        <p class="titulos">Nuestros Productos</p>
+        <p class="titulos">Grupos de Desarrollo</p>
         <p>
-          Explora nuestra gama de productos diseñados para optimizar cada
-          aspecto de tu negocio. Desde aplicaciones intuitivas hasta
-          herramientas avanzadas de gestión, nuestras soluciones están pensadas
-          para impulsar tu productividad y llevar tu empresa al siguiente nivel.
-          Navega por el carrusel para encontrar el producto perfecto para ti.
+          En nuestra empresa, los grupos de desarrollo son el motor que impulsa
+          nuestras soluciones tecnológicas. Cada equipo está compuesto por
+          profesionales altamente capacitados que colaboran de manera ágil y
+          eficiente, combinando su experiencia en distintas áreas del software
+          para transformar ideas en productos de alta calidad. Con un enfoque en
+          la innovación y la excelencia técnica, nuestros desarrolladores
+          trabajan en estrecha coordinación con los clientes, asegurando que
+          cada proyecto no solo cumpla con los requisitos, sino que supere las
+          expectativas, brindando valor real y tangible en cada entrega.
         </p>
 
-        <div
-          class="card-container flex-wrap"
-          id="cards-container-productos"
-        ></div>
-        <!-- Aquí se insertarán las tarjetas dinámicamente -->
+        <div class="card-container flex-wrap" id="cards-container"></div>
       </div>
     </section>
 
@@ -71,16 +71,16 @@
     <!-- Modal -->
     <div
       class="modal fade"
-      id="productInfoModal"
+      id="teamInfoModal"
       tabindex="-1"
-      aria-labelledby="productInfoModalLabel"
+      aria-labelledby="teamInfoModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="productInfoModalLabel">
-              Información del Producto
+            <h5 class="modal-title" id="teamInfoModalLabel">
+              Información del Equipo
             </h5>
             <button
               type="button"
@@ -90,13 +90,11 @@
             ></button>
           </div>
           <div class="modal-body">
-            <p id="modal_product_name"></p>
-            <p id="modal_product_description"></p>
-            <p id="modal_product_version"></p>
-            <p id="modal_product_corporation"></p>
-            <p id="modal_product_company"></p>
-            <p id="modal_product_contact"></p>
-            <p id="modal_product_ruc"></p>
+            <h3 id="modal_team_name"></h3>
+            <p id="modal_team_products"></p>
+            <h6>Miembros del Equipo:</h6>
+            <div id="modal_team_members"></div>
+            <!-- Aquí se mostrará la información de los miembros -->
           </div>
           <div class="modal-footer">
             <button
