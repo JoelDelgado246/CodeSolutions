@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 card.className = 'card';
 
                 card.innerHTML = `
-                    <img src="assets/images/default-team.png" alt="Equipo">
+                    <img src="https://img.freepik.com/foto-gratis/equipo-negocios-exitoso-feliz_53876-74892.jpg" alt="Equipo">
                     <H3 class="titulo_tarjeta">${team.teamName}</H3>
                     <p>Productos involucrados:<br>${[...team.products].join(', ')}</p>
                 `;
