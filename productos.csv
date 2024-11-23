@@ -1,7 +1,4 @@
 ID,Estado,Nombre,Lenguaje,Descripcion,Version,Corporacion,NombreEmpresa,Contacto,RUC
-P0001,activo,ContaPlus,Phyton,Software para contabilidad y auditoria,1.23,La Favorita,SuperMaxi,0985203695,1.72624E+12
-P0002,activo,FireGuard,C++,Programa detector de incendios en bosques,1.25,Zurich,Seguros Ecuador,0982466597,1.74565E+12
-P0003,activo,Ecoanalyze,Java,Programa analisis financiero,2.14,Conexion,DK Magnament,0998562317,1.72625E+12
-P0004,activo,ProFit,Java,App para entrenamiento deportivo,2.45,Mundo Deportivo,Marathon,0990457896,1.72655E+12
-P0005,inactivo,Mymap,C++,Programa para indicar la ubicacion exacta de una persona en el mapa,1.02,Berkshire,Pilot Travel Centers,0982466597,1.75456E+12
-P0005,activo,Mymap2,C++,Programa para indicar la ubicacion exacta de una persona en el mapa,1.02,Berkshire,Pilot Travel Centers,0982466597,1.75456E+12
+P0001,activo,ContaPlus,Phyton,Software para contabilidad y auditoria,1.23,La Favorita,SuperMaxi,0985203695,1726240000000
+P0002,activo,FireGuard,C++,Programa detector de incendios en bosques,1.25,Zurich,Seguros Ecuador,0982466597,1745650000000
+P0003,activo,Ecoanalyze,Java,Programa analisis financiero,2.45,Conexion,DK Magnament,0998562317,1726250000000
